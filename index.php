@@ -4,6 +4,7 @@
   $lunghezzaParagrafo = count($arrayCreato);
   $lunghezzaStringa = strlen($paragrafoTesto);
   $censura = $_GET["censurare"];
+  
 
   
 ?>
@@ -18,7 +19,7 @@
 </head>
 <body>
 <div>
-  <h3> <?php echo $paragrafoTesto; ?> </h3>
+  <h3> <?php echo str_replace($censura,"***",$paragrafoTesto); ?>  </h3>
   <p>lunghezza filastrocca : <?php echo $lunghezzaStringa ?> lettere e spazi</p>
   <p>lunghezza filastrocca : <?php echo $lunghezzaParagrafo ?> parole</p>
 
