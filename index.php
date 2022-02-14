@@ -4,9 +4,6 @@
   $lunghezzaParole = count($arrayCreato);
   $lunghezzaLettere = strlen($paragrafoTesto);
   $censura = $_GET["censurare"];
-  
-
-  
 ?>
 
 <!DOCTYPE html>
