@@ -1,8 +1,8 @@
 <?php
   $paragrafoTesto="ambaraba-cci-ccoccò tre civette sul comò che facevano l'amore con la figlia del dottore op";
   $arrayCreato=explode(" ",$paragrafoTesto);
-  $lunghezzaParagrafo = count($arrayCreato);
-  $lunghezzaStringa = strlen($paragrafoTesto);
+  $lunghezzaParole = count($arrayCreato);
+  $lunghezzaLettere = strlen($paragrafoTesto);
   $censura = $_GET["censurare"];
   
 
@@ -20,8 +20,8 @@
 <body>
 <div>
   <h3> <?php echo str_replace($censura,"***",$paragrafoTesto); ?>  </h3>
-  <p>lunghezza filastrocca : <?php echo $lunghezzaStringa ?> lettere e spazi</p>
-  <p>lunghezza filastrocca : <?php echo $lunghezzaParagrafo ?> parole</p>
+  <p>lunghezza filastrocca : <?php echo $lunghezzaLettere ?> lettere e spazi</p>
+  <p>lunghezza filastrocca : <?php echo $lunghezzaParole ?> parole</p>
 
 </div>
 
