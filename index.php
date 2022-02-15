@@ -16,7 +16,7 @@
 </head>
 <body>
 <div>
-  <h3> <?php echo str_replace($censura,"***",$paragrafoTesto); ?>  </h3>
+  <h3> <?php echo str_ireplace($censura,"***",$paragrafoTesto); ?>  </h3>
   <p>lunghezza filastrocca : <?php echo $lunghezzaLettere ?> lettere e spazi</p>
   <p>lunghezza filastrocca : <?php echo $lunghezzaParole ?> parole</p>
 
